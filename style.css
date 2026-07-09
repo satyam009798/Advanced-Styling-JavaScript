@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0b6b69;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd43b;
+}
+
+.hero{
+    height:300px;
+    background:linear-gradient(135deg,#0b6b69,#17b89c);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.carousel-section{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.carousel-section h2{
+    color:#0b6b69;
+    margin-bottom:30px;
+}
+
+.carousel{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.carousel img{
+    width:700px;
+    height:400px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.carousel button{
+    background:#0b6b69;
+    color:white;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.carousel button:hover{
+    background:#17b89c;
+}
+
+.dots{
+    margin-top:20px;
+}
+
+.dot{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background:#bbb;
+    border-radius:50%;
+    margin:0 5px;
+}
+
+.active{
+    background:#0b6b69;
+}
+
+.api-section{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.api-section h2{
+    color:#0b6b69;
+    margin-bottom:20px;
+}
+
+.api-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.api-box p{
+    font-size:22px;
+    margin-bottom:25px;
+    min-height:80px;
+}
+
+.api-box button{
+    padding:12px 30px;
+    background:#0b6b69;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.api-box button:hover{
+    background:#17b89c;
+}
+
+.contact{
+    padding:60px 8%;
+}
+
+.contact h2{
+    text-align:center;
+    color:#0b6b69;
+    margin-bottom:25px;
+}
+
+.contact form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact textarea{
+    height:150px;
+    resize:none;
+}
+
+.contact button{
+    padding:14px;
+    background:#0b6b69;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.contact button:hover{
+    background:#17b89c;
+}
+
+footer{
+    background:#0b6b69;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.social-icons{
+    margin:20px 0;
+}
+
+.social-icons a{
+    color:white;
+    font-size:28px;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#ffd43b;
+    transform:translateY(-5px);
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.carousel img{
+    width:100%;
+    max-width:600px;
+    height:320px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+    padding:15px;
+}
+
+nav{
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.hero{
+    height:240px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.carousel{
+    flex-direction:column;
+}
+
+.carousel img{
+    width:100%;
+    height:220px;
+}
+
+.carousel button{
+    width:45px;
+    height:45px;
+}
+
+.api-box{
+    padding:20px;
+}
+
+.api-box p{
+    font-size:18px;
+}
+
+.contact form{
+    width:100%;
+}
+
+footer{
+    font-size:15px;
+}
+
+}
